@@ -5,14 +5,15 @@ var burger = {
           cb(res);
         });
       },
-      insertOne: function(table, col, burg, cb) {
+      insertOne: function(col, burg, cb) {
+        console.log("burgers.js" + col + burg );
         orm.insertOne("burgers", col, burg, function(res) {
           cb(res);
         });
       },
       updateOne: function(table, col, condition, cb) {
-        orm.updateOne("burgers", col, condition, function(res) {
-          cb(res);
+        orm.updateOne("burgers", "devoured", condition, function(res) {
+          cb(res); 
         });
       }
 
