@@ -36,9 +36,9 @@ var orm = {
         qS += col;
         qS += " =1";
         qS += " WHERE ";
-        qS += "?";
-    
-        connection.query(qS,[condition], function(err, result) {
+        qS += condition;
+    console.log(qS);
+        connection.query(qS, function(err, result) {
           if (err) {
             throw err;
           }

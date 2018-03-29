@@ -11,7 +11,7 @@ var burger = {
           cb(res);
         });
       },
-      updateOne: function(table, col, condition, cb) {
+      updateOne: function(condition, cb) {
         orm.updateOne("burgers", "devoured", condition, function(res) {
           cb(res); 
         });
