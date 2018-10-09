@@ -1,5 +1,5 @@
-var connection = require("../config/connection.js");
-
+// var connection = require("../config/connection.js");
+var connection = require("../config/config.json");
 var orm = {
     selectAll: function (tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
