@@ -1,5 +1,5 @@
 var mysql = require("mysql");
-JAWSDB_URL='mysql://ojr7hbmab1wa8pa2:rm6yqc4v5tiuvpgh@wftuqljwesiffol6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/lxgb2h1fmsdrhcsx'
+JAWSDB_URL='mysql://qxhzq9kqt300zgsn:j2jzuwvv3nulijq4@uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/u37bd9e884ptachu'
 // Set up our connection information
 var connection;
 
