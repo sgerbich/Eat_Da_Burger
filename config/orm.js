@@ -14,10 +14,10 @@ var orm = {
 
         var qS = "INSERT INTO " + table;
         qS += " (";
-        qS += cols;
+        qS += cols.toString();
         qS += ") ";
         qS += "VALUES (";
-        qS += '?';
+        qS += "?";
         qS += ") ";
         console.log(qS);
         connection.query(qS, [burg], function(err, result) {
